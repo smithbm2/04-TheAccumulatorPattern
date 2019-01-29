@@ -5,8 +5,8 @@ This module demonstrates the ACCUMULATOR pattern in three classic forms:
    IN GRAPHICS:   x = x + pixels
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         Aaron Wilkin, their colleagues, and Braden Smith.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 #
@@ -27,38 +27,38 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #          which of the following three choices would you use?
 #
 #            for k in range(r - 1):
-#            for k in range(r):
+#            for k in range(r): Choose this option
 #            for k in range(r + 1):
 #
 #     b. If you want a loop that runs from 0 to s, inclusive,
-#          what expression would you use in the _____ below?
+#          what expression would you use in the ___(range)__ below?
 #
-#            for k in range(_____):
+#            for k in range(__s+1___):
 #
 #     c. If you want a loop that runs from r to s, inclusive, assuming s >= r,
-#          what expression would you use in the _____ below?
+#          what expression would you use in the ___range__ below?
 #
-#            for k in range(_____):
+#            for k in range(__r,(s+1)___):
 #
 #     d. If you want a loop that runs from (r + 4) to (s - 10),
 #          including the (r + 4) but not including the (s - 10),
-#          what expression would you use in the _____ below?
+#          what expression would you use in the ___range__ below?
 #
-#            for k in range(_____):
+#            for k in range(__(r+4),(s-10)___):
 #
 #     e. The following code snippet attempts to return the number
 #          of integers from r to s, inclusive, whose cosines are positive.
 #          It has at least 5 distinct errors (one per line).  What are they?
 #
-#              for k in range(r - s):
-#                  count = 0
-#                  if math.cos(r) > 0:
-#                      count = 1
-#                  return count
+#              for k in range(r - s): There is supposed to be a comma between the r and s
+#                  count = 0 This is supposed to be located above the k loop
+#                  if math.cos(r) > 0: 'r' is supposed to be 'k' in this case
+#                      count = 1 This should be count = count+1
+#                  return count  This also should be even with the for k in range line
 #
 #     f. The code in the "graphics accumulation" example below includes:
 #            for _ in range(n):
-#        What does the   _   (underscore) mean?
+#        What does the   _   (underscore) mean? The underscore means that it is not used as a variable, but the function runs the same.
 #
 #     g. The code in the "graphics accumulation" example below includes:
 #
@@ -85,7 +85,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #                  center = rg.Point(x + (k * diameter), y)
 #                  circle = rg.Circle(point, radius)
 #                  circle.attach_to(window)
-#                  x = x + (2 * radius)
+#                  x = x + (2 * radius) This is the wrong one because the x value is adjusted twice when it should be only adjusted once.
 #
 ###############################################################################
 #   *** MAKE SURE YOU UNDERSTAND THE 3   ACCUMULATOR   PATTERNS    ***
