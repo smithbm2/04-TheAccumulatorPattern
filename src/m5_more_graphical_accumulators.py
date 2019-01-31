@@ -374,7 +374,7 @@ def draw_lines_from_rectangles(rectangle1, rectangle2, n, window):
         line = rg.Line(rg.Point(center1x , center1y) , rg.Point(center2x , center2y))
         center1x = center1x - x1
         center1y = center1y + y1
-        center2x = center2x -x1
+        center2x = center2x - x1
         center2y = center2y + y1
         line.thickness = 5
         if k%2 == 0:
